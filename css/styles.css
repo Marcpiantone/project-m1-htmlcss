@@ -3,18 +3,21 @@
 /* Mobile styles */
 
 body {
+    padding-top: 45px;
     display: flex;
     flex-direction: column;
     font-family: "Poppins";
 }
-
+a{
+    text-decoration: none;
+}
 nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 40px;
-    background-color: rgb(90, 90, 90);
+    height: 45px;
+    background-color: rgb(54, 54, 54);
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,8 +29,21 @@ nav{
 .mobilemenu{
     padding: 10px;
 }
+.desktopmenu {
+    display:none
+}
 .menu{
     display: none;
+    position: absolute;
+    z-index: 1;
+
+}
+.menu a {
+    color: white;
+    padding: 15px;
+    display: block;
+    background-color:rgb(54, 54, 54);
+    justify-content: space-evenly;
 }
 .mobilemenu:hover > .menu {
     display:block;
@@ -35,41 +51,69 @@ nav{
     text-align: center;
     top: 100%;
     right: 0;
-    background-color:rgb(90, 90, 90);
     width: 100%;
     height: 200px;
-    text-decoration: none;
-    color: white;
-    z-index: +1;
+}
+.menu a:hover {
+    background-color: rgb(129, 129, 129);
 }
 
-main {
-    position: relative;
-    top: 40px;
-}
-.intro {
+.background {
+    background-image: url("/imgs/bg.jpg");
+    width: 100%;
+    height: 1000px;
     display: flex;
+    align-items: center;
+    vertical-align: center;
+}
+
+.intro{
+    width: 60%;
+    color: white;
+    border: solid white 3px;
+    padding: 25px;
+    display:flex;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    background: url(/imgs/bg.jpg);
-    background-size:cover;
-    width:100vw;
-    background-position: center;
-    height: 600px;
-    justify-content: center;
+
 }
-h1 {
-    display:block;
-    font-size: 2rem;
-    border:2px white;
+
+h1{
+    font-size: 3em;
+    line-height: 150%;
+    width: 30%;
+    align-items: left;
+}
+h2{
+    font-size: 2em;
 }
 .textintro{
-    display: block;
+    width: 25%;
 }
+
+.textintro p {
+    column-count: 2;
+}
+
 footer{
     position: relative;
     top: 40px;
 }
 @media (min-width: 768px) {
-    /* desktop */
+    .desktopmenu {
+        display: inline;
+    }
+    .desktopmenu a {
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 8px;
+    }
+    .desktopmenu > a:hover{
+        border-bottom: white solid 3px;
+    }
+    .mobilemenu{
+        display: none;
+    }
 }
