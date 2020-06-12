@@ -2,6 +2,10 @@
 
 /* Mobile styles */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding-top: 45px;
     display: flex;
@@ -11,6 +15,7 @@ body {
 a{
     text-decoration: none;
 }
+/* NAV */
 nav{
     display: flex;
     flex-direction: row;
@@ -22,6 +27,7 @@ nav{
     position: fixed;
     top: 0;
     font-family: "Poppins";
+    z-index: 2;
 }
 .homebutton img{
     padding: 10px;  
@@ -36,7 +42,7 @@ nav{
 .menu{
     display: none;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 
 }
 .menu a {
@@ -58,9 +64,10 @@ nav{
 .menu a:hover {
     background-color: rgb(129, 129, 129);
 }
-
+/* INTRO */
 .background {
     background-image: url("/imgs/bg.jpg");
+    background-position: center;
     width: 100%;
     height: 1000px;
     display: flex;
@@ -97,25 +104,26 @@ h1{
     column-count: 2;
     padding: 20px;
 }
+/* FEATURES */
 
 .features{
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 10px;
 }
 .features h3 {
     font-size: 1.2em;
     font-weight: bold;
     padding: 30px;
-}
+} 
 .feature img{
     height: 50px;
     padding: 15px;
 }
-.feature{
+.feature {
     width: 400px;
     margin: 10px;
     text-align: center;
@@ -135,19 +143,115 @@ h1{
     padding: 20px 160px;
     margin-bottom: 20px;
 }
-
+/* COOL TEXT */
 .cooltext {
-    margin-top: 30px;
+    margin-top: 10px;
     background-color:rgb(54, 54, 54) ;
     color : white;
+    padding: 90px;
 }
 .cooltext h2{
     font-size: 2em;
-    padding: 50px;
+    line-height: 200%;
 }
 
 .cooltext p {
+    line-height: 150%;
+}
+/* ANIMATION */
+
+.animation {
+    position: relative;
+    top: -10vh;
+    left: 10%;
+    background-color:rgb(54, 54, 54);
+    border: solid white;
+    text-align: center;
+    height: 20vh;
+    width: 40vh;
+    z-index: 1;
+}
+
+.animation h4 {
+    font-size: 1.5em;
+    color: red;
     padding: 20px;
+}
+
+.animation p {
+    color: white;
+}
+.animation:hover {
+    animation: rotation 2s infinite;
+}
+
+@keyframes rotation {
+50% {transform: rotate(180deg)}
+60% {left :20% ;transform: rotate(270deg) }
+}
+
+/* SLICK GRADIENT */
+
+.slickgradient {
+    position: relative;
+    top: -157px;
+    background: rgb(2,0,36);
+    background:  linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(43,191,218,0.7430322470785189) 20%, rgba(69,84,180,1) 100%);
+    text-align: right;
+    padding: 50px;
+    z-index: -1;
+    min-height: 40vh;
+}
+
+.slickgradient h2{
+    font-size: 2em;
+    color: white;
+    padding: 50px;
+
+}
+
+.slickgradient p{
+    color: white;
+    padding-right: 50px;
+}
+/* IMAGE GALLERY */
+.images {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.email {
+    text-align: center;
+    line-height: 150%;
+}
+.email label {
+    display: block;
+
+}
+.email input {
+    display: flex;
+    text-align: bottom;
+    height : 30px;
+}
+
+.email-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email .submit{
+    border: solid rgb(136, 136, 136);
+    border-left: 0 ;
+    border-radius: 3px;
+    background-color: rgb(136, 136, 136);
+    text-decoration: none;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    line-height: 150%;
 }
 
 footer{
