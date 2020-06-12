@@ -221,6 +221,7 @@ h1{
     
 }
 
+/* EMAIL FORM */
 .email {
     text-align: center;
     line-height: 150%;
@@ -254,10 +255,27 @@ h1{
     line-height: 150%;
 }
 
+/* FOOTER */
 footer{
     position: relative;
-    top: 40px;
+    top: 40px; ;
 }
+
+.footerlinks{
+    border-top: solid 1px rgb(54, 54, 54);
+    columns: 2;
+    padding: 30px;
+}
+
+.footerlinks ul {
+    padding: 20px;
+
+}
+.footerlinks a{
+    color: rgb(136, 136, 136);
+}
+
+
 @media (min-width: 768px) {
     .desktopmenu {
         display: inline;
@@ -284,5 +302,8 @@ footer{
     }
     .textintro{
         width: 60%;
+    }
+    .footerlinks{
+        columns: 4;
     }
 }
