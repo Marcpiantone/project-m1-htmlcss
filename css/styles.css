@@ -25,6 +25,7 @@ nav{
 }
 .homebutton {
     padding: 10px;
+    height:35px;
 }
 .mobilemenu{
     padding: 10px;
@@ -78,12 +79,12 @@ nav{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 150%;
     margin: 20px;
     text-align: left;
 }
-h2{
+.intro h2{
     font-size: 2em;
     margin: 20px;
     padding-bottom: 20px;
@@ -103,22 +104,52 @@ h2{
     margin: 0 auto;
     width: 90%;
     justify-content: space-between;
-
+    padding-top: 10px;
 }
 .features h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px;
+}
+.feature img{
+    height: 50px;
+    padding: 15px;
 }
 .feature{
     width: 400px;
-    border: solid yellow;
     margin: 10px;
     text-align: center;
     padding: 10px;
+    -webkit-box-shadow: -1px 3px 16px 6px rgba(209,209,209,1);
+    -moz-box-shadow: -1px 3px 16px 6px rgba(209,209,209,1);
+    box-shadow: -1px 3px 16px 6px rgba(209,209,209,1);
+    line-height: 150%;
+}
+.feature p {
+    padding: 20px;
+}
+.feature button{
+    background-color:rgb(54, 54, 54) ;
+    color: white;
+    border: none;
+    padding: 20px 160px;
+    margin-bottom: 20px;
 }
 
-.features button  {
-    vertical-align: center;
+.cooltext {
+    margin-top: 30px;
+    background-color:rgb(54, 54, 54) ;
+    color : white;
 }
+.cooltext h2{
+    font-size: 2em;
+    padding: 50px;
+}
+
+.cooltext p {
+    padding: 20px;
+}
+
 footer{
     position: relative;
     top: 40px;
