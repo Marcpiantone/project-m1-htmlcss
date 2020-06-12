@@ -86,7 +86,7 @@ h1{
 h2{
     font-size: 2em;
     margin: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     border-bottom: white dotted 1.5px ;
 }
 .textintro{
@@ -94,20 +94,31 @@ h2{
 }
 .textintro p {
     column-count: 2;
-    padding: 10px;
+    padding: 20px;
 }
 
 .features{
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+
 }
 .features h3 {
     font-size: 1.5em;
 }
 .feature{
+    width: 400px;
+    border: solid yellow;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
+.features button  {
+    vertical-align: center;
+}
 footer{
     position: relative;
     top: 40px;
@@ -137,6 +148,6 @@ footer{
         width: 30%;
     }
     .textintro{
-        width: 55%;
+        width: 60%;
     }
 }
