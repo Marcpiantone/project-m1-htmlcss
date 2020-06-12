@@ -23,9 +23,9 @@ nav{
     top: 0;
     font-family: "Poppins";
 }
-.homebutton {
-    padding: 10px;
-    height:35px;
+.homebutton img{
+    padding: 10px;  
+    height: 35px;
 }
 .mobilemenu{
     padding: 10px;
@@ -127,7 +127,7 @@ h1{
 }
 .feature p {
     padding: 20px;
-}
+} 
 .feature button{
     background-color:rgb(54, 54, 54) ;
     color: white;
