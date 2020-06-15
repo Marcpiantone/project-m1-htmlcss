@@ -222,6 +222,10 @@ h1{
     top: -157px;
 }
 
+.image {
+/* This wont work. WHY ? */
+    overflow:hidden;
+}
 .content {
     display: flex;
     justify-content: center;
@@ -230,11 +234,13 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
+    overflow: hidden;
 }
 
 .content a {
     font-size: 1.5em;
     color: white;
+    text-shadow: 2px 2px 8px #000000;
     visibility: hidden;
     transition: visibility ease-in-out 0.05s;
 }
@@ -244,7 +250,7 @@ h1{
 }
 
 .image:hover {
-    transform:scale(1.1)
+    transform:scale(1.1);
 }
 
 .tesla {
@@ -377,7 +383,5 @@ footer{
     }
     .image{
         width: calc(100%/3);
-        overflow: hidden;
-        position: relative;
     }
 }
