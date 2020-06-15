@@ -64,7 +64,9 @@ nav{
 .menu a:hover {
     background-color: rgb(129, 129, 129);
 }
+
 /* INTRO */
+
 .background {
     background-image: url("/imgs/bg.jpg");
     background-position: center;
@@ -241,6 +243,10 @@ h1{
     visibility: visible;
 }
 
+.image:hover {
+    transform:scale(1.1)
+}
+
 .tesla {
     background-image: url(/imgs/tesla.jpg);
 }
@@ -267,6 +273,8 @@ h1{
 
 /* EMAIL FORM */
 .email {
+    position: relative;
+    top: -75px;
     text-align: center;
     line-height: 150%;
 }
@@ -294,6 +302,8 @@ h1{
 }
 
 .checkbox {
+    position: relative;
+    top: -75px;
     display: flex;
     justify-content: center;
     line-height: 150%;
@@ -367,5 +377,7 @@ footer{
     }
     .image{
         width: calc(100%/3);
+        overflow: hidden;
+        position: relative;
     }
 }
